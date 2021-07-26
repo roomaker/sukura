@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog</class>
+ <widget class="QDialog" name="dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>441</width>
+    <height>716</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>author----roomaker</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/image/biomega.ico</normaloff>:/image/biomega.ico</iconset>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>421</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>650</y>
+     <width>421</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5">
+        <property name="leftMargin">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QCheckBox" name="checkBox">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>mark eligible channels</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,1,1">
+        <property name="spacing">
+         <number>8</number>
+        </property>
+        <property name="leftMargin">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>greater than</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="inputMask">
+           <string notr="true">#.#</string>
+          </property>
+          <property name="text">
+           <string>0.8</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Mohm</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,1,2,1">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>uA</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinBox">
+          <property name="maximum">
+           <number>2000</number>
+          </property>
+          <property name="singleStep">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>ms</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="platebutton">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 16px;
+    color: #504B67;
+    font-style: italic;
+    font-weight: bold;
+
+    text-align: aligncenter;
+    padding-left:3px;
+    padding-top: 0px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #666666;
+    border-radius: 10px;
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-radius: 10px;
+
+
+    background-color: #D1C9B7;
+    background-repeat: no-repeat;
+    background-position: aligncenter;
+}
+QPushButton:hover{
+	color:#FFF5EE;;
+	border-color:#666666; 
+    background-color: #D2B48C;
+}
+QPushButton:pressed{
+	color: #504B67;
+	border-color:#F4A460;
+    background-color:#F0FFFF;
+}</string>
+        </property>
+        <property name="text">
+         <string>plate channels</string>
+        </property>
+        <property name="autoRepeat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="savebutton">
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 16px;
+    color: #504B67;
+    font-style: italic;
+    font-weight: bold;
+
+    text-align: left center;
+    padding-left:3px;
+    padding-top: 0px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #666666;
+    border-radius: 10px;
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-radius: 10px;
+
+
+    background-color: #D1C9B7;
+    background-repeat: no-repeat;
+    background-position: aligncenter;
+}
+QPushButton:hover{
+	color:#FFF5EE;;
+	border-color:#666666; 
+    background-color: #D2B48C;
+}
+QPushButton:pressed{
+	color: #504B67;
+	border-color:#F4A460;
+    background-color:#F0FFFF;
+}</string>
+      </property>
+      <property name="locale">
+       <locale language="Chinese" country="China"/>
+      </property>
+      <property name="text">
+       <string notr="true">save 
+data </string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

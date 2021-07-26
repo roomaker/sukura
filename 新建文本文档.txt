@@ -1,0 +1,1 @@
+pyinstaller -F -i biomega.ico --noconsole biotry.py
